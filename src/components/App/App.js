@@ -1,28 +1,9 @@
 import React, { Component } from "react";
 import {Search,Loader,CustomButton,Pagination} from "../index";
+import { DEFAULT_QUERY,BASE_URL,PARAM_PAGE } from "./constants";
+import { largeColumn,midColumn,smallColumn,autoColumn } from "./styles";
 import "./App.css";
 import axios from "axios";
-const largeColumn = {
-  width: "40%"
-};
-
-const midColumn = {
-  width: "30%"
-};
-
-const smallColumn = {
-  width: "10%"
-};
-const autoColumn = {
-  width: "auto"
-};
-const DEFAULT_QUERY = "";
-
-const PATH_BASE = "https://hn.algolia.com/api/v1";
-const PATH_SEARCH = "/search";
-const PARAM_SEARCH = "query=";
-const BASE_URL = `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}`;
-const PARAM_PAGE = "page=";
 
 const CancelToken = axios.CancelToken;
 const source = CancelToken.source();
