@@ -1,32 +1,7 @@
 import React, { Component } from "react";
-import {Paper,InputBase,IconButton,Box,Tooltip, makeStyles } from '../../material-ui/core';
+import {Paper,InputBase,IconButton,Box,Tooltip } from '../../material-ui/core';
 import {SearchIcon} from '../../material-ui/icon'
-const useStyles = makeStyles(theme => ({
-  root: {
-    padding: theme.spacing(4, 4),
-  },
-  iconButton: {
-    flex:1
-  },
-  
-  input: {
-    textOverflow:'ellipsis',
-    flex:1,
-  },
-  divider: {
-    width: 1,
-    height: 28,
-    margin: 4,
-  },
-}));
-const style={
-  maxWidth:600,
-  // minWidth:100,
-  margin:'auto'
-}
-const width={
-  width:'100%'
-}
+import useStyles from './style';
 class Search extends Component {
   render() {
     const { 
@@ -38,7 +13,7 @@ class Search extends Component {
     } = this.props;
     return (
       <Paper
-      style={style}>
+      style={useStyles.style}>
       <Box  width={1} display="flex" >
         <Box component="div"   width={0.1}>
         <Tooltip title="Search">
@@ -54,7 +29,7 @@ class Search extends Component {
         value={value}
         onChange={onChange}
         onKeyDown={onKeyDown}
-        style={width}
+        style={useStyles.width}
         inputProps={{ 'aria-label': 'Search',}}
       />
       </Box>
