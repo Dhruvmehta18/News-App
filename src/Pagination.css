@@ -1,0 +1,15 @@
+.pagination:nth-child(n):hover:not(.active){
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.pagination:nth-child(n):active{
+  color: white;
+  background-color: #3f51b5;
+  cursor: pointer;
+}
+.active{
+  color: white;
+  background-color: #3f51b5;
+  cursor: pointer;
+}
