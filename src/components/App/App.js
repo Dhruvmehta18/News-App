@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-import Search from "./Search";
-import Loader from "./Loader";
+import {Search,Loader,CustomButton,Pagination} from "../index";
 import "./App.css";
 import axios from "axios";
-import CustomButton from "./Button";
-import Pagination from './Pagination';
 const largeColumn = {
   width: "40%"
 };
