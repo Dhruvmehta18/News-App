@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination has a valid snapshot 1`] = `
+<div
+  className="interactions"
+>
+  <div
+    className="MuiBox-root MuiBox-root-16"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-17 pagination"
+      onClick={[Function]}
+    >
+      1
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-18 pagination active"
+      onClick={[Function]}
+    >
+      2
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-19 pagination"
+      onClick={[Function]}
+    >
+      3
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-20 pagination"
+      onClick={[Function]}
+    >
+      4
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-21 pagination"
+      onClick={[Function]}
+    >
+      5
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-22 pagination"
+      onClick={[Function]}
+    >
+      6
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-23 pagination"
+      onClick={[Function]}
+    >
+      7
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-24 pagination"
+      onClick={[Function]}
+    >
+      8
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-25 pagination"
+      onClick={[Function]}
+    >
+      9
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-26 pagination"
+      onClick={[Function]}
+    >
+      10
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-27 pagination"
+    >
+      ››
+    </div>
+    <div
+      className="MuiBox-root MuiBox-root-28 pagination"
+      onClick={[Function]}
+    >
+      50
+    </div>
+  </div>
+</div>
+`;

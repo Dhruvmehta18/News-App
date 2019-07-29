@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App, { Table } from './App';
-import Search from './Search'
 import renderer from 'react-test-renderer';
 
 describe('App', () => {
@@ -13,21 +12,6 @@ describe('App', () => {
   test('has a valid snapshot', () => {
     const component = renderer.create(
       <App />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-});
-
-describe('Search', () => {
-  it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Search>Search</Search>, div);
-    ReactDOM.unmountComponentAtNode(div);
-  });
-  test('has a valid snapshot', () => {
-    const component = renderer.create(
-      <Search>Search</Search>
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
