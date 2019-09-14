@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {Paper,InputBase,IconButton,Box,Tooltip } from '../../material-ui/core';
-import {SearchIcon} from '../../material-ui/icon'
+import { display } from '@material-ui/system';
+import {SearchIcon} from '../../material-ui/icon';
 import useStyles from './style';
 class Search extends Component {
   render() {
@@ -15,22 +16,21 @@ class Search extends Component {
       <Paper
       style={useStyles.style}>
       <Box  width={1} display="flex" >
-        <Box component="div"   width={0.1}>
+        <Box component="div">
         <Tooltip title="Search">
         <IconButton onClick={onSubmit} className={useStyles.iconButton} aria-label="Search">
         <SearchIcon />
       </IconButton>
         </Tooltip>
       </Box>
-      <Box component="div" textOverflow="ellipsis" m={1} width="0.9">
+      <Box component="div" display='flex' textOverflow="ellipsis" m={1} width={1} inputTypeSearch>
       <InputBase
-        className={useStyles.input}
         placeholder={children}
         value={value}
         onChange={onChange}
         onKeyDown={onKeyDown}
-        style={useStyles.width}
         inputProps={{ 'aria-label': 'Search',}}
+        style={{width:'100%'}}
       />
       </Box>
       </Box>

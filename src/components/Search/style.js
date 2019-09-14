@@ -6,7 +6,6 @@ const useStyles = makeStyles(theme => ({
     iconButton: {
       flex:1
     },
-    
     input: {
       textOverflow:'ellipsis',
       flex:1,
@@ -17,13 +16,16 @@ const useStyles = makeStyles(theme => ({
       margin: 4,
     },
     style:{
-        maxWidth:600,
-        // minWidth:100,
-        margin:'auto'
+      width:'100%',
     },
     width:{
-        width:'100%'
-    }
+        width:'100%',
+    },
+    searchInput:{
+      textOverflow:'ellipsis',
+      width:'100%',
+      flex:1
+    },
   }));
 
 export default useStyles;
